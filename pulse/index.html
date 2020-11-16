@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="css/slick.css"/>
+  <link rel="stylesheet" href="css/iconfonts.css">
+  <title>Пульсометры</title>
+</head>
+
+<body>
+
+  <section class="promo">
+    <div class="container">
+      <header class="header">
+        <a href="#" class="header__logo">
+          <img src="img/promo/logo.svg" alt="logo">
+        </a>
+        <div class="header__official">
+          Официальный представитель
+          <span>Garmin, Polar, Suunto</span>
+        </div>
+        <div class="header__contacts">
+          <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
+          <button class="button" data-modal="consultation" >заказать звонок</button>
+        </div>
+      </header>
+
+      <div class="promo__wrapper">
+        <h1 class="title">Подбор пульсометра</h1>
+        <h2 class="promo__subheader">С учётом вашего уровня подготовки</h2>
+        <div class="promo__icons">
+          <div class="promo__icon">
+            <img src="img/promo/clock.png" alt="clock">
+            Время подбора: 10 минут
+          </div>
+          <div class="promo__icon">
+            <img src="img/promo/delivery.png" alt="delivery">
+            Бесплатная доставка
+          </div>
+          <div class="promo__icon">
+            <img src="img/promo/message.png" alt="message">
+            Ответим на все вопросы
+          </div>
+        </div>
+        <button class="button button--main" data-modal="consultation">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+        <div class="promo__link">
+          или
+          <a href="#">перейти в каталог</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <div class="container">
+
+      <h2 class="title title--black">НАШИ ПРЕИМУЩЕСТВА</h2>
+
+      <div class="advantages__wrapper">
+        <div class="advantages__item">
+          <img src="img/advantages/cup.png" alt="cup">
+          <div class="subtitle advantages__subtitle">Делимся опытом</div>
+          <div class="advantages__description">
+            Наши сотрудники всегда готовы поделиться своим опытом, 
+            так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
+          </div>
+        </div>
+
+        <div class="advantages__item">
+          <img src="img/advantages/heart.png" alt="heart">
+          <div class="subtitle advantages__subtitle">Заботимся о здоровье</div>
+          <div class="advantages__description">
+            Мы работаем для того, 
+            чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
+          </div>
+        </div>
+
+        <div class="advantages__item">
+          <img src="img/advantages/shoe.png" alt="shoe">
+          <div class="subtitle advantages__subtitle">Учим бегать</div>
+          <div class="advantages__description">
+            Помогаем с обучением 
+            правильной технике бега! 
+            Дружим с крупнейшей школой бега в  России - <br>
+            <a href="#">LOVE RUNNING.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="consultation">
+    <div class="container">
+      <h2 class="title title--left">Получите бесплатную консультацию <br>
+        по подбору пульсометра </h2>
+      <div class="consultation__subtitle subtitle--left">Просто заполните форму заявки <br> 
+        и мы перезвоним вам в течении 10 минут</div>
+      <form id="consultation-form" action="#" class="feel-form">
+        <input required name="name" placeholder="Ваше имя" type="text">
+        <input required name="phone" placeholder="Ваш телефон">
+        <input required name="email" placeholder="Ваш email" type="email">
+        <button class="button button--submit button--input">Заказать консультацию</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="carousel">
+    <div class="container">
+      <div class="carousel__inner">
+        <div>
+          <img src="img/carousel/slick1.jpg" alt="slide">
+        </div>
+        <div>
+          <img src="img/carousel/slick2.jpg" alt="slide">
+        </div>
+        <div>
+          <img src="img/carousel/slick3.jpg" alt="slide">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="catalog">
+  <div class="container">
+    <h2 class="catalog__title title title--black">
+      Каталог пульсометров
+    </h2>
+    <ul class="catalog__tabs">
+      <li class="catalog__tab catalog__tab--active">
+        <div class="catalog__tab-text">Для фитнеса</div>
+      </li>
+      <li class="catalog__tab">
+        <div class="catalog__tab-text">для бега</div>
+      </li>
+      <li class="catalog__tab">
+        <div class="catalog__tab-text">для триатлона</div>
+      </li>
+    </ul>
+
+    <div class="catalog__content catalog__content--active">
+
+      <div class="catalog-item">
+        <div class="catalog-item__wrapper">
+
+          <div class="catalog-item__content catalog-item__content--active">
+            
+            <img src="img/catalog/catalog_img.jpg" alt="pulsometr" class="catalog-item__img">
+            <div class="catalog-item__subtitle subtitle subtitle--catalog">Пульсометр Sundo M2</div>
+            <div class="catalog-item__descr">
+              Для первых шагов в тренировках, основанных на сердечном ритме
+            </div>
+            <a href="№" class="catalog-item__link">ПОДРОБНЕЕ</a>
+          </div>
+
+          <ul class="catalog-item__list">
+            <li class="catalog-item__item">
+              Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+            </li>
+            <li class="catalog-item__item">
+              Вы увидите информативный графический индикатор целевых тренировочных зон пульса; 
+            </li>
+            <li class="catalog-item__item">
+              Также Вы увидите информацию о расходе калорий за тренировку;
+            </li>
+            <li class="catalog-item__item">
+              Вы сможете посмотреть данные по 10 тренировкам.
+            </li>
+            <a href="#" class="catalog-item__back">назад</a>
+          </ul>
+        </div>
+
+        <hr class="catalog-item__horisont-rule">
+
+        <div class="catalog-item__footer">
+          <div class="catalog-item__prices">
+            <div class="catalog-item__old-price">4 750 руб.</div>
+            <div class="catalog-item__price">4 500 руб.</div>
+          </div>
+          <button class="button button--buy">купить</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <div class="catalog-item__wrapper">
+
+          <div class="catalog-item__content catalog-item__content--active">
+            
+            <img src="img/catalog/catalog_img.jpg" alt="pulsometr" class="catalog-item__img">
+            <div class="catalog-item__subtitle subtitle subtitle--catalog">Пульсометр Polar FT1</div>
+            <div class="catalog-item__descr">
+              Для первых шагов в тренировках, основанных на сердечном ритме
+            </div>
+            <a href="№" class="catalog-item__link">ПОДРОБНЕЕ</a>
+          </div>
+
+          <ul class="catalog-item__list">
+            <li class="catalog-item__item">
+              Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+            </li>
+            <li class="catalog-item__item">
+              Вы увидите информативный графический индикатор целевых тренировочных зон пульса; 
+            </li>
+            <li class="catalog-item__item">
+              Также Вы увидите информацию о расходе калорий за тренировку;
+            </li>
+            <li class="catalog-item__item">
+              Вы сможете посмотреть данные по 10 тренировкам.
+            </li>
+            <a href="#" class="catalog-item__back">назад</a>
+          </ul>
+        </div>
+
+        <hr class="catalog-item__horisont-rule">
+
+        <div class="catalog-item__footer">
+          <div class="catalog-item__prices">
+            <div class="catalog-item__old-price">4 750 руб.</div>
+            <div class="catalog-item__price">4 500 руб.</div>
+          </div>
+          <button class="button button--buy">купить</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <div class="catalog-item__wrapper">
+
+          <div class="catalog-item__content catalog-item__content--active">
+            
+            <img src="img/catalog/catalog_img.jpg" alt="pulsometr" class="catalog-item__img">
+            <div class="catalog-item__subtitle subtitle subtitle--catalog">Пульсометр Polar FT1</div>
+            <div class="catalog-item__descr">
+              Для первых шагов в тренировках, основанных на сердечном ритме
+            </div>
+            <a href="№" class="catalog-item__link">ПОДРОБНЕЕ</a>
+          </div>
+
+          <ul class="catalog-item__list">
+            <li class="catalog-item__item">
+              Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+            </li>
+            <li class="catalog-item__item">
+              Вы увидите информативный графический индикатор целевых тренировочных зон пульса; 
+            </li>
+            <li class="catalog-item__item">
+              Также Вы увидите информацию о расходе калорий за тренировку;
+            </li>
+            <li class="catalog-item__item">
+              Вы сможете посмотреть данные по 10 тренировкам.
+            </li>
+            <a href="#" class="catalog-item__back">назад</a>
+          </ul>
+        </div>
+
+        <hr class="catalog-item__horisont-rule">
+
+        <div class="catalog-item__footer">
+          <div class="catalog-item__prices">
+            <div class="catalog-item__old-price">4 750 руб.</div>
+            <div class="catalog-item__price">4 500 руб.</div>
+          </div>
+          <button class="button button--buy">купить</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <div class="catalog-item__wrapper">
+
+          <div class="catalog-item__content catalog-item__content--active">
+            
+            <img src="img/catalog/catalog_img.jpg" alt="pulsometr" class="catalog-item__img">
+            <div class="catalog-item__subtitle subtitle subtitle--catalog">Пульсометр Polar FT1</div>
+            <div class="catalog-item__descr">
+              Для первых шагов в тренировках, основанных на сердечном ритме
+            </div>
+            <a href="№" class="catalog-item__link">ПОДРОБНЕЕ</a>
+          </div>
+
+          <ul class="catalog-item__list">
+            <li class="catalog-item__item">
+              Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+            </li>
+            <li class="catalog-item__item">
+              Вы увидите информативный графический индикатор целевых тренировочных зон пульса; 
+            </li>
+            <li class="catalog-item__item">
+              Также Вы увидите информацию о расходе калорий за тренировку;
+            </li>
+            <li class="catalog-item__item">
+              Вы сможете посмотреть данные по 10 тренировкам.
+            </li>
+            <a href="#" class="catalog-item__back">назад</a>
+          </ul>
+        </div>
+
+        <hr class="catalog-item__horisont-rule">
+
+        <div class="catalog-item__footer">
+          <div class="catalog-item__prices">
+            <div class="catalog-item__old-price">4 750 руб.</div>
+            <div class="catalog-item__price">4 500 руб.</div>
+          </div>
+          <button class="button button--buy">купить</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <div class="catalog-item__wrapper">
+
+          <div class="catalog-item__content catalog-item__content--active">
+            
+            <img src="img/catalog/catalog_img.jpg" alt="pulsometr" class="catalog-item__img">
+            <div class="catalog-item__subtitle subtitle subtitle--catalog">Пульсометр Polar FT1</div>
+            <div class="catalog-item__descr">
+              Для первых шагов в тренировках, основанных на сердечном ритме
+            </div>
+            <a href="№" class="catalog-item__link">ПОДРОБНЕЕ</a>
+          </div>
+
+          <ul class="catalog-item__list">
+            <li class="catalog-item__item">
+              Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+            </li>
+            <li class="catalog-item__item">
+              Вы увидите информативный графический индикатор целевых тренировочных зон пульса; 
+            </li>
+            <li class="catalog-item__item">
+              Также Вы увидите информацию о расходе калорий за тренировку;
+            </li>
+            <li class="catalog-item__item">
+              Вы сможете посмотреть данные по 10 тренировкам.
+            </li>
+            <a href="#" class="catalog-item__back">назад</a>
+          </ul>
+        </div>
+
+        <hr class="catalog-item__horisont-rule">
+
+        <div class="catalog-item__footer">
+          <div class="catalog-item__prices">
+            <div class="catalog-item__old-price">4 750 руб.</div>
+            <div class="catalog-item__price">4 500 руб.</div>
+          </div>
+          <button class="button button--buy">купить</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <div class="catalog-item__wrapper">
+
+          <div class="catalog-item__content catalog-item__content--active">
+            
+            <img src="img/catalog/catalog_img.jpg" alt="pulsometr" class="catalog-item__img">
+            <div class="catalog-item__subtitle subtitle subtitle--catalog">Пульсометр Polar FT1</div>
+            <div class="catalog-item__descr">
+              Для первых шагов в тренировках, основанных на сердечном ритме
+            </div>
+            <a href="№" class="catalog-item__link">ПОДРОБНЕЕ</a>
+          </div>
+
+          <ul class="catalog-item__list">
+            <li class="catalog-item__item">
+              Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+            </li>
+            <li class="catalog-item__item">
+              Вы увидите информативный графический индикатор целевых тренировочных зон пульса; 
+            </li>
+            <li class="catalog-item__item">
+              Также Вы увидите информацию о расходе калорий за тренировку;
+            </li>
+            <li class="catalog-item__item">
+              Вы сможете посмотреть данные по 10 тренировкам.
+            </li>
+            <a href="#" class="catalog-item__back">назад</a>
+          </ul>
+        </div>
+
+        <hr class="catalog-item__horisont-rule">
+
+        <div class="catalog-item__footer">
+          <div class="catalog-item__prices">
+            <div class="catalog-item__old-price">4 750 руб.</div>
+            <div class="catalog-item__price">4 500 руб.</div>
+          </div>
+          <button class="button button--buy">купить</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="catalog__content">
+      <div class="catalog-item">
+        <div class="catalog-item__wrapper">
+
+          <div class="catalog-item__content catalog-item__content--active">
+            
+            <img src="img/catalog/catalog_img.jpg" alt="pulsometr" class="catalog-item__img">
+            <div class="catalog-item__subtitle subtitle subtitle--catalog">Пульсометр Polar FT1</div>
+            <div class="catalog-item__descr">
+              Для первых шагов в тренировках, основанных на сердечном ритме
+            </div>
+            <a href="№" class="catalog-item__link">ПОДРОБНЕЕ</a>
+          </div>
+
+          <ul class="catalog-item__list">
+            <li class="catalog-item__item">
+              Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+            </li>
+            <li class="catalog-item__item">
+              Вы увидите информативный графический индикатор целевых тренировочных зон пульса; 
+            </li>
+            <li class="catalog-item__item">
+              Также Вы увидите информацию о расходе калорий за тренировку;
+            </li>
+            <li class="catalog-item__item">
+              Вы сможете посмотреть данные по 10 тренировкам.
+            </li>
+            <a href="#" class="catalog-item__back">назад</a>
+          </ul>
+        </div>
+
+        <hr class="catalog-item__horisont-rule">
+
+        <div class="catalog-item__footer">
+          <div class="catalog-item__prices">
+            <div class="catalog-item__old-price">4 750 руб.</div>
+            <div class="catalog-item__price">4 500 руб.</div>
+          </div>
+          <button class="button button--buy">купить</button>
+        </div>
+      </div>
+
+      
+      
+    </div>
+    <div class="catalog__content">
+      <div class="catalog-item">
+        <div class="catalog-item__wrapper">
+
+          <div class="catalog-item__content catalog-item__content--active">
+            
+            <img src="img/catalog/catalog_img.jpg" alt="pulsometr" class="catalog-item__img">
+            <div class="catalog-item__subtitle subtitle subtitle--catalog">Пульсометр Polar FT1</div>
+            <div class="catalog-item__descr">
+              Для первых шагов в тренировках, основанных на сердечном ритме
+            </div>
+            <a href="№" class="catalog-item__link">ПОДРОБНЕЕ</a>
+          </div>
+
+          <ul class="catalog-item__list">
+            <li class="catalog-item__item">
+              Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+            </li>
+            <li class="catalog-item__item">
+              Вы увидите информативный графический индикатор целевых тренировочных зон пульса; 
+            </li>
+            <li class="catalog-item__item">
+              Также Вы увидите информацию о расходе калорий за тренировку;
+            </li>
+            <li class="catalog-item__item">
+              Вы сможете посмотреть данные по 10 тренировкам.
+            </li>
+            <a href="#" class="catalog-item__back">назад</a>
+          </ul>
+        </div>
+
+        <hr class="catalog-item__horisont-rule">
+
+        <div class="catalog-item__footer">
+          <div class="catalog-item__prices">
+            <div class="catalog-item__old-price">4 750 руб.</div>
+            <div class="catalog-item__price">4 500 руб.</div>
+          </div>
+          <button class="button button--buy">купить</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <div class="catalog-item__wrapper">
+
+          <div class="catalog-item__content catalog-item__content--active">
+            
+            <img src="img/catalog/catalog_img.jpg" alt="pulsometr" class="catalog-item__img">
+            <div class="catalog-item__subtitle subtitle subtitle--catalog">Пульсометр Polar FT1</div>
+            <div class="catalog-item__descr">
+              Для первых шагов в тренировках, основанных на сердечном ритме
+            </div>
+            <a href="№" class="catalog-item__link">ПОДРОБНЕЕ</a>
+          </div>
+
+          <ul class="catalog-item__list">
+            <li class="catalog-item__item">
+              Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+            </li>
+            <li class="catalog-item__item">
+              Вы увидите информативный графический индикатор целевых тренировочных зон пульса; 
+            </li>
+            <li class="catalog-item__item">
+              Также Вы увидите информацию о расходе калорий за тренировку;
+            </li>
+            <li class="catalog-item__item">
+              Вы сможете посмотреть данные по 10 тренировкам.
+            </li>
+            <a href="#" class="catalog-item__back">назад</a>
+          </ul>
+        </div>
+
+        <hr class="catalog-item__horisont-rule">
+
+        <div class="catalog-item__footer">
+          <div class="catalog-item__prices">
+            <div class="catalog-item__old-price">4 750 руб.</div>
+            <div class="catalog-item__price">4 500 руб.</div>
+          </div>
+          <button class="button button--buy">купить</button>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <div class="catalog-item__wrapper">
+
+          <div class="catalog-item__content catalog-item__content--active">
+            
+            <img src="img/catalog/catalog_img.jpg" alt="pulsometr" class="catalog-item__img">
+            <div class="catalog-item__subtitle subtitle subtitle--catalog">Пульсометр Polar FT1</div>
+            <div class="catalog-item__descr">
+              Для первых шагов в тренировках, основанных на сердечном ритме
+            </div>
+            <a href="№" class="catalog-item__link">ПОДРОБНЕЕ</a>
+          </div>
+
+          <ul class="catalog-item__list">
+            <li class="catalog-item__item">
+              Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+            </li>
+            <li class="catalog-item__item">
+              Вы увидите информативный графический индикатор целевых тренировочных зон пульса; 
+            </li>
+            <li class="catalog-item__item">
+              Также Вы увидите информацию о расходе калорий за тренировку;
+            </li>
+            <li class="catalog-item__item">
+              Вы сможете посмотреть данные по 10 тренировкам.
+            </li>
+            <a href="#" class="catalog-item__back">назад</a>
+          </ul>
+        </div>
+
+        <hr class="catalog-item__horisont-rule">
+
+        <div class="catalog-item__footer">
+          <div class="catalog-item__prices">
+            <div class="catalog-item__old-price">4 750 руб.</div>
+            <div class="catalog-item__price">4 500 руб.</div>
+          </div>
+          <button class="button button--buy">купить</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      
+<section class="review">
+  <div class="container">
+    <div class="title title--black">отзывы клиентов</div>
+    <div class="review__wrapper">
+      <div class="review__user-photo review__user-photo--one">
+      </div>
+      <div class="review__item">
+        <div class="review__user-name">Асхат Талгатович</div>
+        <div class="review__usage-time">2 полумарафона</div>
+        <div class="review__text">
+        Не знал что себе купить - обратился к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.
+        Через некоторое время решил обновить гаджет - не раздумывая обратилась туда же.
+        <br><br>
+        Новые цели - новый гаджет!
+        <br><br>
+        Спасибо, RunSmart! Моя жена прекрасна! Я невероятно хорош!
+        </div>
+      </div>
+    </div>
+    <div class="review__wrapper">
+      <div class="review__user-photo review__user-photo--two">
+      </div>
+      <div class="review__item">
+        <div class="review__user-name">Иван Сёмочкин</div>
+        <div class="review__usage-time">1 полумарафон</div>
+        <div class="review__text">
+        Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. 
+        Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.
+        <br><br>
+        С ними подготовился к своему первому полумарафону! Спасибо!!!
+        </div>  
+      </div>
+    </div>
+    <div class="review__wrapper">
+      <div class="review__user-photo review__user-photo--three">
+      </div>
+      <div class="review__item">
+        <div class="review__user-name">Юлия Дашкина</div>
+        <div class="review__usage-time">2 полумарафона</div>
+        <div class="review__text">
+        Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать.
+        <br><br>
+        Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться!
+        <br><br>
+        Спасибо!!!
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__map">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A298830abcb2a94be507843632a9b86358f603e40369719d800c1a06607b5a85a&amp;source=constructor" width="100%" height="630" frameborder="0"></iframe>
+  </div>
+  <div class="footer__info">
+    <address class="footer__addr">
+      Москва, улица Красная Пресня, 44с3
+    </address>
+    <a href="tel:+74999228974" class="footer__phone">+7 (499) 922-89-74</a>
+    <div class="footer__social">
+      <a href="#" class="footer__link">
+        <span class="icon-facebook"></span>
+      </a>
+      <a href="#" class="footer__link">
+        <span class="icon-instagram1"></span>
+      </a>
+      <a href="#" class="footer__link">
+        <span class="icon-pinterest2"></span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay">
+
+  <div class="modal" id="consultation">
+    <div class="modal__close">&times;</div>
+    <div class="modal__subtitle">Просто заполните форму заявки</div>
+    <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+    <form action="#" class="feel-form feel-form--modal">
+      <input name="name" placeholder="Ваше имя" type="text">
+      <input name="phone" placeholder="Ваш телефон"">
+      <input name="email" placeholder="Ваш email" type="email">
+      <button class="button button--submit button--input">Заказать консультацию</button>
+    </form>
+  </div>
+
+  <div class="modal" id="order">
+    <div class="modal__close">&times;</div>
+    <div class="modal__subtitle">Ваш заказ:</div>
+    <div class="modal__descr">Пульсометр Polar FT1</div>
+    <form action="#" class="feel-form feel-form--modal">
+      <input name="name" placeholder="Ваше имя" type="text">
+      <input name="phone" placeholder="Ваш телефон">
+      <input name="email" placeholder="Ваш email" type="email">
+      <button class="button button--submit button--input">Заказать консультацию</button>
+    </form>
+  </div>
+
+  <div class="modal modal--mini" id="thanks">
+    <div class="modal__close">&times;</div>
+    <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+    <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+  </div>
+</div>
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
