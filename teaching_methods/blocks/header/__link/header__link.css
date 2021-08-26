@@ -1,0 +1,11 @@
+.header__link {
+  /* position: absolute; */
+  text-decoration: none;
+  color: #2F80ED;
+  cursor: pointer;
+  z-index: 2;
+}
+.header__link:hover {
+  color: rgba(47,128,237, .5);
+  transition: all 0.2s;
+}
