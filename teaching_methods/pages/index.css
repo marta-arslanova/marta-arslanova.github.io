@@ -4,7 +4,6 @@
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_place/logo_place_header.css);
 @import url(../blocks/logo/_place/logo_place_footer.css);
-@import url(../blocks/logo/logo.css);
 @import url(../blocks/rotation/rotation.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
@@ -38,7 +37,7 @@
 @import url(../blocks/feynman/__link/feynman__link.css);
 @import url(../blocks/feynman/__main-illustration/feynman__main-illustration.css);
 @import url(../blocks/digits/digits.css);
-@import url(../blocks/table/table.css); /* Разтащить еще */
+@import url(../blocks/table/table.css);
 @import url(../blocks/table/_theme/table_theme_dark.css);
 @import url(../blocks/table/__cell/table__cell.css);
 @import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);
@@ -68,5 +67,5 @@
 @import url(../blocks/footer/__author/footer__author.css);
 @import url(../blocks/footer/__column-heading/footer__column-heading.css);
 @import url(../blocks/footer/__column-links/footer__column-links.css);
-@import url(../blocks/footer/__social_icon/footer__social_icon.css);
+@import url(../blocks/footer/__social-icon/footer__social-icon.css);
 @import url(../blocks/footer/__column-link/footer__column-link.css);

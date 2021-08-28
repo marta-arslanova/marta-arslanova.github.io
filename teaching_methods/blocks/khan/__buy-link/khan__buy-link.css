@@ -3,9 +3,9 @@
   line-height: 42px;
   font-size: 30px;
   color: #2F80ED;
+  transition: all 0.2s;
 }
 
 .khan__buy-link:hover {
   color: rgba(47,128,237, .5);
-  transition: all 0.2s;
 }
