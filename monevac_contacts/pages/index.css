@@ -1,0 +1,11 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/style.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/container/container.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/breadcrumbs/braedcrumbs.css);
+@import url(../blocks/subheader/subheader.css);
+@import url(../blocks/contacts/contacts.css);
+@import url(../blocks/main/main.css);
+@import url(../blocks/cities/cities.css);
+@import url(../blocks/footer/footer.css);

@@ -1,0 +1,137 @@
+.contacts {
+  margin: 62px auto 0;
+  min-height: 620px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contacts__info {
+  width: 607px;
+}
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: space-between;
+}
+.contacts__phone {
+  font-family: 'RoadRadio';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 110%;
+  color: #262633;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contacts__email{
+  font-family: 'Golos';
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #BF2738;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contacts__descr {
+  margin: 20px 0 0 0;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+}
+.contacts__list {
+  margin: 30px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+.contacts__item {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  color: #808080;
+}
+.form {
+  
+  width: 630px;
+}
+.form__subheader {
+  margin: 0;
+  font-family: 'RoadRadio';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 110%;
+  color: #262633;
+}
+.form__group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form__group-item {
+  box-sizing: border-box;
+  width: 300px;
+  height: 52px;
+  background: #F5F5F5;
+  border-radius: 14px;
+  border: none;
+  padding: 0 20px;
+  font-family: 'Golos';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.form__group-message {
+  margin-top: 28px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 630px;
+  height: 133px;
+  background: #F5F5F5;
+  border-radius: 14px;
+  font-family: 'Golos';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #797986;
+  border: none;
+  resize: none;
+}
+.checkbox {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+.checkbox__native{ 
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox__native:checked + .checkbox__custom{
+  background-color: #BF2738;
+  background-image: url('../../images/checkbox.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox__custom {
+  margin-right: 16px;
+  width: 20px;
+  height: 20px;
+  background: #F5F5F5;
+  border-radius: 4px;
+}
+
+.checkbox__title {
+  height: 20px;
+  font-family: 'Golos';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 120%;
+  color: #808080;
+  margin-bottom: 30px;
+  padding-top: 5px;
+}

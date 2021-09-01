@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Golos';
+  src: url(Golos/Golos-Text_Regular.woff) format('woff');
+  src: url(Golos/Golos-Text_Regular.woff2) format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Golos';
+  src: url(Golos/Golos-Text_Medium.woff) format('woff');
+  src: url(Golos/Golos-Text_Medium.woff2) format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'RoadRadio';
+  src: url(RoadRadio/RoadRadio.woff) format('woff');
+  src: url(RoadRadio/RoadRadio.woff2) format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Akzidenz-Grotesk Pro';
+  src: url(AkzidenzGroteskPro/AkzidenzGroteskPro-Regular.woff) format('woff');
+  src: url(AkzidenzGroteskPro/AkzidenzGroteskPro-Regular.woff2) format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url(Graphik/GraphikLCWebRegular.woff) format('woff');
+  src: url(Graphik/GraphikLCWebRegular.woff2) format('woff2');
+  font-weight: 400;
+}
+
+

@@ -1,0 +1,17 @@
+.subheader {
+  min-height: 100px;
+  /* width: 100vw; */
+  background-color: #F5F5F5;
+}
+
+.subheader__title {
+  margin: 0;
+  padding-top: 24px;
+  text-align: center;
+  font-family: 'RoadRadio';
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 100%;
+  color: #262633;
+  text-transform: uppercase;
+}
