@@ -80,6 +80,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+  transition: all .2s;
+  outline: none;
+  outline-offset: 0;
+}
+.form__group-item:hover{
+  background-color: #fff;
+  border: 2px solid #F5F5F5;
 }
 
 .form__group-message {
@@ -97,6 +104,12 @@
   color: #797986;
   border: none;
   resize: none;
+  transition: all 2s;
+  outline: none;
+}
+.form__group-message:hover{
+  background-color: transparent;
+  border: 2px solid #EDEDED;
 }
 .checkbox {
   margin-top: 20px;

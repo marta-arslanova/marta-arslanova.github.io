@@ -72,6 +72,11 @@
   font-size: 14px;
   line-height: 140%;
   color: #BF2738;
+  border: none;
+  background-color: transparent;
+}
+.cities__link:hover {
+  font-weight: 500;
 }
 .cities__time-work {
   position: absolute;

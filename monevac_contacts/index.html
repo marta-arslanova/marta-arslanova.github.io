@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="pages/index.css">
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet'/>
+  
   <title>Моневак контакты</title>
 </head>
 
@@ -48,16 +52,16 @@
         <button class="button">Оставить заявку</button>
       </div>
     </div>
-    </header>
-    
-    <main class="main">
-      <div class="breadcrumbs">
-        <div class="container">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a href="#" class="breadcrumbs__link">Главная</a>
-            </li>
-            <li class="breadcrumbs__item">
+  </header>
+  
+  <main class="main">
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
               <a href="#" class="breadcrumbs__link breadcrumbs__link_active">Контакты</a>
             </li>
           </ul>
@@ -80,10 +84,10 @@
               Общество с ограниченной ответственностью «МОНЕВАК»<br/>
               Сокращенное наименование: ООО «МОНЕВАК»<br/>
             </p>
-           <ul class="contacts__list">
-             <li class="contacts__item">ИНН: 3448050610</li>
-             <li class="contacts__item">КПП: 344801001</li>
-             <li class="contacts__item">ОКПО: 67354285</li>
+            <ul class="contacts__list">
+              <li class="contacts__item">ИНН: 3448050610</li>
+              <li class="contacts__item">КПП: 344801001</li>
+              <li class="contacts__item">ОКПО: 67354285</li>
              <li class="contacts__item">ОКАТО: 18401000000</li>
              <li class="contacts__item">ОГРН: 1103461002480</li>
              <li class="contacts__item">Код по ОКВЭД: 51.70</li>
@@ -94,7 +98,7 @@
               <li class="contacts__item">ОКПО: 67354285</li>
               <li class="contacts__item">к/с: 30101810500000000207</li>
               <li class="contacts__item">р/с: 40702810926090000003</li>
-             </ul>
+            </ul>
             <ul class="contacts__list">
               <li class="contacts__item">Юридический адрес: 400080, Волгоградская обл. г. Волгоград <br/> ул. Командира Рудь,14А, офис 13</li>
               <li class="contacts__item">Почтовый адрес: 400080, Волгоградская обл. г. Волгоград ул. <br/> Командира Рудь, 14А, офис 13</li>
@@ -116,6 +120,14 @@
           </form>
         </div>
       </div>
+        
+          <div id='map' class="map"></div>
+          
+        
+     
+      
+      
+      
       <div class="container">
         <div class="cities">
           <ul class="cities__list">
@@ -123,8 +135,8 @@
               <h2 class="cities__title">МОСКВА</h2>
               <a class="cities__phone" href="tel:+74991361718" >+7 (499) 136-17-18</a>
               <a class="cities__phone" href="tel:+79034679851" >+7 (903) 467-98-51</a>
-              <p class="cities__address">115114, ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
-              <a href="#" class="cities__link">Проложить маршрут</a> 
+              <p class="cities__address">115114, ул. Дербеневская, д. 7, стр. 23, комната 19 (станция метро "Павелецкая")</p>
+              <button class="cities__link" data-city="Moscow">Показать на карте</button> 
               <p class="cities__time-work">Режим работы: c 10:00 до 18:00</p>
             </li>
             <li class="cities__item">
@@ -132,7 +144,7 @@
               <a class="cities__phone" href="tel:+78442650888" >+7 (8442) 65-08-88</a>
               <a class="cities__phone" href="tel:+78442650880" >+7 (8442) 65-08-80</a>
               <p class="cities__address">400080, ул. Командира Рудь, 14А</p>
-              <a href="#" class="cities__link">Проложить маршрут</a> 
+              <button class="cities__link" data-city="Volgograd">Показать на карте</button> 
               <p class="cities__time-work">Режим работы: c 10:00 до 17:00</p>
             </li>
             <li class="cities__item">
@@ -140,7 +152,7 @@
               <a class="cities__phone" href="tel:+78612927188" >+7 (861) 292-71-88</a> 
               <a class="cities__phone" href="tel:+79034679851" >+7 (903) 467-98-51</a>
               <p class="cities__address">350015, ул. Митрофана Седина, 176</p>
-              <a href="#" class="cities__link">Проложить маршрут</a> 
+              <button class="cities__link" data-city="Krasnodar">Показать на карте</button> 
               <p class="cities__time-work">Режим работы: c 08:00 до 17:00</p>
             </li>
             <li class="cities__item">
@@ -148,7 +160,7 @@
               <a class="cities__phone" href="tel:+79276260050" >+7 (927) 626-00-50</a> 
               <a class="cities__phone" href="tel:+79034679851" >+7 (903) 467-98-51</a>
               <p class="cities__address">410080, пр-т Строителей, 1</p>
-              <a href="#" class="cities__link">Проложить маршрут</a> 
+              <button class="cities__link" data-city="Saratov">Показать на карте</button> 
               <p class="cities__time-work">Режим работы: c 10:00 до 18:00</p>
             </li>
             <li class="cities__item">
@@ -156,15 +168,15 @@
               <a class="cities__phone" href="tel:+79276260050" >+7 (473) 229-63-78</a> 
               <a class="cities__phone" href="tel:+79034679851" >+7 (903) 467-98-51</a>
               <p class="cities__address">394030, ул. Комиссаржевской, 10</p>
-              <a href="#" class="cities__link">Проложить маршрут</a> 
+              <button class="cities__link" data-city="Voronezh">Показать на карте</button> 
               <p class="cities__time-work">Режим работы: c 10:00 до 18:00</p>
             </li>
             <li class="cities__item">
               <h2 class="cities__title">ЕРЕВАН</h2>
               <a class="cities__phone" href="tel:+37491219069" >+374 91 21 90 69</a> 
               <a class="cities__phone" href="tel:+37460509069" >+374 60 50 90 69</a>
-              <p class="cities__address">410080, пр-т Строителей, 1</p>
-              <a href="#" class="cities__link">Проложить маршрут</a> 
+              <p class="cities__address">квартал Исаакян, 4</p>
+              <button class="cities__link" data-city="Jerevan">Показать на карте</button> 
               <p class="cities__time-work">Режим работы: c 10:00 до 18:00</p>
             </li>
             <li class="cities__item cities__item_size_long">
@@ -175,7 +187,7 @@
               <a class="cities__phone cities__phone_size_long" href="fax:+7(383)2062209">Факс: +7 (383) 20-62-209;</a>
               <a class="cities__phone cities__phone_size_long" href="tel:+79034679851" >+7 (903) 467-98-51</a>
               <p class="cities__address">630039, ул. Никитина 116, к.3</p>
-              <a href="#" class="cities__link">Проложить маршрут</a> 
+              <button class="cities__link" data-city="Novosibirsk">Показать на карте</button> 
               <p class="cities__time-work">Режим работы: c 10:00 до 18:00</p>
             </li>
           </ul>
@@ -247,12 +259,14 @@
           <p class="footer__address">Москва ул. Дербеневская, д. 1, стр. 1, подъезд 44, офис 6 (станция метро "Павелецкая")</p>
         </div>
     </footer>
+    <script src="js/map.js"></script>
   </body>
-</html>
-
-
-
-
-
-
-
+  </html>
+  
+  
+  
+  
+  
+  
+  
+  
