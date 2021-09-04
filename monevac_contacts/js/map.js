@@ -1,88 +1,5 @@
-const geojson = {
-  type: "FeatureCollection",
-  features: [
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [37.649, 55.722],
-      },
-      properties: {
-        title: "Mapbox",
-        description: "Moscow",
-      },
-    },
-
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [44.578, 48.498],
-      },
-      properties: {
-        title: "Mapbox",
-        description: "Volgograd",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [39.121, 45.035],
-      },
-      properties: {
-        title: "Mapbox",
-        description: "Krasnodar",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [55.173, 30.201],
-      },
-      properties: {
-        title: "Mapbox",
-        description: "Saratov",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [65.57, 57.192],
-      },
-      properties: {
-        title: "Mapbox",
-        description: "Voronezh",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [45.018, 53.19],
-      },
-      properties: {
-        title: "Mapbox",
-        description: "Jerevan",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [31.204, 54.269],
-      },
-      properties: {
-        title: "Mapbox",
-        description: "Novosibirsk",
-      },
-    },
-  ],
-};
-
-mapboxgl.accessToken = process.env.MAP_ACCESS_TOKEN;
+mapboxgl.accessToken =
+  "pk.eyJ1IjoiYXJzaW1hcnRpIiwiYSI6ImNrdDE0ZWR3ZjA2d3oyb3IyOTFzenMxNmoifQ.cCLEt8GznnslzvKb_ROjpQ";
 const map = new mapboxgl.Map({
   container: "map", // container ID
   style: "mapbox://styles/arsimarti/ckt30oi7u0s2817ohgoez32qe", // style URL
@@ -90,35 +7,51 @@ const map = new mapboxgl.Map({
   zoom: 3, // starting zoom
 });
 
-for (const { geometry, properties } of geojson.features) {
-  // create a HTML element for each feature
-  const el = document.createElement("div");
-  el.className = "marker";
+const places = [
+  [37.65297, 55.724258],
+  [44.57983, 48.500645],
+  [38.982958, 45.040922],
+  [45.966398, 51.586537],
+  [39.203243, 51.671439],
+  [44.57038, 40.219916],
+  [82.974814, 55.022634],
+];
 
-  // make a marker for each feature and add to the map
-  new mapboxgl.Marker(el).setLngLat(geometry.coordinates).addTo(map);
-}
-map.on('click', 'circle', (e) => {
-  map.flyTo({
-  center: e.features[0].geometry.coordinates
-  });
-  });
+places.forEach(function (item, index) {
+  const markerElement = document.createElement("div");
+  markerElement.id = "mapbox-marker-" + index;
+  markerElement.className = "marker";
 
-document.querySelectorAll(".cities__link").forEach((element) => {
-  element.addEventListener("click", () => {
-    const { city } = element.dataset;
-    const cityToFly = geojson.features.find(
-      (cityData) => cityData.properties.description === city
-    );
+  new mapboxgl.Marker({
+    element: markerElement,
+    offset: [0, -20],
+  })
+    .setLngLat(item)
+    .addTo(map);
 
-    const { coordinates } = cityToFly.geometry;
+  markerElement.addEventListener("click", function () {
     map.flyTo({
-      center: {
-        lng: coordinates[0],
-        lat: coordinates[1],
-      },
-      zoom: 16,
-      essential: true,
+      center: places[index],
+      zoom: 17,
     });
   });
+});
+
+const mapElement = document.querySelector("#map");
+
+document.querySelector(".cities__list").addEventListener("click", (e) => {
+  const { classList } = e.target;
+  if (classList.contains("cities__link")) {
+    const { dataset } = e.target;
+    const { cityIndex } = dataset;
+
+    mapElement.scrollIntoView({
+      behavior: "smooth",
+    });
+
+    map.flyTo({
+      center: places[cityIndex],
+      zoom: 17,
+    });
+  }
 });
