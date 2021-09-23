@@ -1,0 +1,10 @@
+.intro__link-number {
+  font-weight: 400;
+} 
+
+@media screen and (max-width: 768px){
+  .intro__link-number{
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

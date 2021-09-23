@@ -1,0 +1,9 @@
+.header__wrapper-lang {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}

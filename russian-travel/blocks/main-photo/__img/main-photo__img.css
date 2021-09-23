@@ -1,0 +1,5 @@
+.main-photo__img {
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+}
