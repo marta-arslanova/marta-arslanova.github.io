@@ -4,17 +4,15 @@
   line-height: 163%;
   width: 100%;
 }
-
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1023px) {
   .place__text {
     font-size: 16px;
     line-height: 26px;
   }
 }
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .place__text {
-    max-width: calc(100% - 16px*2);
+    max-width: calc(100% - 16px * 2);
     margin: 0 auto;
   }
 }

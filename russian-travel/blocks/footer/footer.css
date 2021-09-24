@@ -3,22 +3,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: calc(100% - 48px*2);
+  max-width: calc(100% - 48px * 2);
   margin: 92px auto 24px;
 }
-
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1023px) {
   .footer {
     margin: 88px auto 24px;
-    max-width: calc(100% - 24px*2);
+    max-width: calc(100% - 24px * 2);
   }
 }
-
-@media screen and (max-width: 768px){
-  .footer{
+@media screen and (max-width: 768px) {
+  .footer {
     margin: 64px auto 24px;
     flex-direction: column;
-    max-width: calc(100% - 16px*2);
-    align-items:flex-start
+    max-width: calc(100% - 16px * 2);
+    align-items: flex-start;
   }
 }

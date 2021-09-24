@@ -1,17 +1,15 @@
 .main-photo {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: calc(100% - 48px*2);
-} 
-
-@media screen and (max-width: 1023px){
+  max-width: calc(100% - 48px * 2);
+}
+@media screen and (max-width: 1023px) {
   .main-photo {
-    max-width: calc(100% - 24px*2);
+    max-width: calc(100% - 24px * 2);
   }
 }
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .main-photo {
-    max-width: calc(100% - 16px*2);
+    max-width: calc(100% - 16px * 2);
   }
 }

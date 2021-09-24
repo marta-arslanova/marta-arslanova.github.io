@@ -1,5 +1,5 @@
 .footer__link {
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -7,18 +7,16 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-  transition: color .3s linear;
+  transition: color 0.3s linear;
 }
-
 .footer__link:hover {
   color: rgba(256, 256, 256, 0.4);
 }
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .footer__link {
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     font-size: 24px;
     line-height: 24px;
- }
+  }
 }
