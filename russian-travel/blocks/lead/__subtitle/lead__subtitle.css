@@ -5,7 +5,7 @@
   text-align: center;
   width: 640px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .lead__subtitle {
     font-size: 16px;
     line-height: 20px;

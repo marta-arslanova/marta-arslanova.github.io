@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   max-width: 1184px;
   min-height: 740px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 1279px) {
   .cover {
@@ -18,7 +19,7 @@
     min-height: 480px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .cover {
     min-height: 200px;
   }

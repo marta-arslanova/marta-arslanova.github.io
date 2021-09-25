@@ -3,7 +3,7 @@
   font-size: 12px;
   line-height: 18px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .intro__item {
     font-size: 12px;
     line-height: 18px;
