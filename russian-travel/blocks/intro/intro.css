@@ -1,5 +1,5 @@
 .intro {
-  margin: 92px auto 92px;
+  margin: 92px auto;
   max-width: calc(100% - 148px * 2);
   box-sizing: border-box;
 }
@@ -10,7 +10,7 @@
 }
 @media screen and (max-width: 1023px) {
   .intro {
-    margin: 88px auto 88px;
+    margin: 88px auto;
     max-width: calc(100% - 24px * 2);
   }
 }
