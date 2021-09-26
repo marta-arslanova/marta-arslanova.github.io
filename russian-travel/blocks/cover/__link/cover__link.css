@@ -22,4 +22,5 @@
 }
 .cover__link:hover::before {
   background-color: rgba(42, 44, 47, 0.8);
+  opacity: 0.8;
 }

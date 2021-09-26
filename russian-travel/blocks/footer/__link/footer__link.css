@@ -7,10 +7,10 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-  transition: color 0.3s linear;
+  transition: opacity 0.3s linear;
 }
 .footer__link:hover {
-  color: rgba(256, 256, 256, 0.8);
+  opacity: 0.8;
 }
 @media screen and (max-width: 767px) {
   .footer__link {
