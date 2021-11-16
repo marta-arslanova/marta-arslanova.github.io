@@ -1,0 +1,23 @@
+.header__burger {
+  display: none;
+  border: none;
+  background: none;
+  padding: 0;
+  background-image: url(../../../img/header/burger.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.header__burger:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 1200px){
+  .header__burger {
+    display: block;
+  }
+}

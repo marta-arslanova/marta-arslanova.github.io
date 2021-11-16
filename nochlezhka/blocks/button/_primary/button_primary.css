@@ -1,0 +1,5 @@
+.button_primary {
+  background: var(--color-primary);
+  color: var(--light-primary);
+  border: none;
+}

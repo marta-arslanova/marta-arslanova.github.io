@@ -1,0 +1,22 @@
+.events__scroll-area {
+  box-sizing: border-box;
+  display: flex;
+  margin: 40px 0 0 0;
+  padding: 0 0 24px 0;
+  overflow-x: auto;
+  max-width: 1340px;
+}
+
+.events__scroll-area::-webkit-scrollbar {
+  height: 4px;
+}
+
+.events__scroll-area::-webkit-scrollbar-track {
+  background-color: var(--light-primary);
+}
+
+.events__scroll-area::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 4px;
+}
+

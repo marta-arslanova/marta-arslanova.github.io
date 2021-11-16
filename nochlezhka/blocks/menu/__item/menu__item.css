@@ -1,0 +1,9 @@
+.menu__item {
+  height: 100%;
+  margin: 0 22px;
+  transition: all 0.15s linear;
+}
+
+.menu__item:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,17 @@
+.card__img{
+  height: 180px;
+  width: 320px;
+  object-fit: cover;
+  transition: all .3s linear;
+  z-index: 5;
+}
+
+.card__img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 700px){
+  .card__img{
+    height: 202px;
+  }
+}

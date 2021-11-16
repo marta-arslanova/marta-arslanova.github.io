@@ -1,0 +1,11 @@
+.page{
+    font-family: 'TT Firs Neue';
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    min-width: 360px;
+    color: var(--dark-primary);
+    background-color: var(--light-primary);
+}

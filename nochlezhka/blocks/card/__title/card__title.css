@@ -1,0 +1,19 @@
+.card__title {
+  margin: 16px 0 0 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  min-height: 48px;
+  color: var(--dark-primary);
+  transition: all .2s linear;
+}
+
+.card__title:hover{
+  opacity: .8;
+}
+
+@media screen and (max-width: 700px){
+  .card__title{
+    line-height: 28px;
+  }
+}

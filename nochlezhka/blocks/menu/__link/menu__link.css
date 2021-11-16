@@ -1,0 +1,7 @@
+.menu__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  color: var(--dark-primary);
+}

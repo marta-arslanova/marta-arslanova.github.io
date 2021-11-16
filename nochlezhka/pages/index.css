@@ -1,249 +1,108 @@
-@import url(../vendor/fonts/TT_Firs_Neue.css);
-.page {
-  font-family: 'TT Firs Neue', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  box-sizing: border-box;
-  width: 100%;
-  min-width: 360px;
-  margin: 0 auto;
-  color: #3b3748;
-  background-color: #fcfaf7;
-}
-.header {
-  background-color: #ffd400;
-  width: 100%;
-  padding: 20px 0;
-}
-.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1440px;
-  padding: 0 40px;
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-.container {
-  max-width: 1440px;
-  padding: 0 40px;
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-.header__logo {
-  transition: all 0.15s linear;
-}
-.header__logo:hover {
-  transform: scale(1.1);
-}
-.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.header__location {
-  margin: 0 0 0 96px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  position: relative;
-  cursor: pointer;
-  transition: all 0.15s linear;
-}
-.header__location:hover {
-  transform: scale(1.05);
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+@import "../vendor/normalize.css";
+@import "../blocks/root/root.css";
+@import "../vendor/fonts/fonts.css";
+@import "../blocks/page/page.css";
+@import "../blocks/container/container.css";
+@import "../blocks/title/title.css";
+@import "../blocks/button/button.css";
+@import "../blocks/button/_primary/button_primary.css";
+@import "../blocks/events/events.css";
+@import "../blocks/events/__wrapper/events__wrapper.css";
+@import "../blocks/events/__button/events__button.css";
+@import "../blocks/events/__arrow/events__arrow.css";
+@import "../blocks/events/__scroll-area/events__scroll-area.css";
+@import "../blocks/events/__main-button/events__main-button.css";
+@import "../blocks/card/card.css";
+@import "../blocks/card/__btn/card__btn.css";
+@import "../blocks/card/__icon/card__icon.css";
+@import "../blocks/card/__link/card__link.css";
+@import "../blocks/card/__content/card__content.css";
+@import "../blocks/card/__wrapper/card__wrapper.css";
+@import "../blocks/card/__type/card__type.css";
+@import "../blocks/card/__time/card__time.css";
+@import "../blocks/card/__title-link/card__title-link.css";
+@import "../blocks/card/__title/card__title.css";
+@import "../blocks/card/__descr/card__descr.css";
+@import "../blocks/card/__footer/card__footer.css";
+@import "../blocks/card/__address/card__address.css";
+@import "../blocks/card/__links/card__links.css";
+@import "../blocks/card/__img/card__img.css";
+@import "../blocks/header/header.css";
+@import "../blocks/header/__wrapper/header__wrapper.css";
+@import "../blocks/header/__logo-link/header__logo-link.css";
+@import "../blocks/header/__location/header__location.css";
+@import "../blocks/header/__event/header__event.css";
+@import "../blocks/header/__button/header__button.css";
+@import "../blocks/header/__burger/header__burger.css";
+@import "../blocks/header/__burger/_active/header__burger_active.css";
+@import "../blocks/menu/menu.css";
+@import "../blocks/menu/__list/menu__list.css";
+@import "../blocks/menu/__item/menu__item.css";
+@import "../blocks/menu/__link/menu__link.css";
+@import "../blocks/promo/promo.css";
+@import "../blocks/promo/__logo/promo__logo.css";
+@import "../blocks/promo/__follow-up/promo__follow-up.css";
+@import "../blocks/promo/__button/promo__button.css";
+@import "../blocks/about/about.css";
+@import "../blocks/about/__title/about__title.css";
+@import "../blocks/about/__wrapper/about__wrapper.css";
+@import "../blocks/about/__text/about__text.css";
+@import "../blocks/about/__button/about__button.css";
+@media screen and (max-width: 700px){
 
 }
-.header__location::before {
-  content: '';
-  background-image: url('../images/location.svg');
-  background-size: cover;
-  position: absolute;
-  left: -32px;
-  width: 22px;
-  height: 24px;
-}
 
-.header__event {
-  margin: 0 32px 0 0;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  position: relative;
-  align-items: flex-end;
-  cursor: pointer;
-  transition: all 0.15s linear;
-}
-.header__event:hover {
-  transform: scale(1.05);
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-.header__event::before {
-  content: '';
-  background-image: url('../images/heart.svg');
-  position: absolute;
-  background-size: cover;
-  left: -33px;
-  width: 25px;
-  height: 23px;
-  transition: all 0.2s linear;
-}
-.header__event:hover::before {
-  animation: pulse-btn 1.5s infinite linear;
-  background-image: url('../images/heart__red.svg');
-}
-
-.menu {
-  margin: 0 42px 0 0;
-}
-.menu__list {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-}
-.menu__item {
-  margin: 0 22px;
-  transition: all 0.15s linear;
-}
-.menu__item:hover {
-  transform: scale(1.1);
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-.menu__link {
-  text-decoration: none;
-  color: #3b3748;
-}
-
-.button {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 11px 23px;
-  background: none;
-  border: 2px solid #3b3748;
-  border-radius: 26px;
-  cursor: pointer;
-  color: #3b3748;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: 'TT Firs Neue';
-  transition: all 0.2s linear;
-}
-.button:hover {
-  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
-
-}
-.button_primary {
-  background: #7100ff;
-  color: #fcfaf7;
-  border: none;
-}
-
-.promo {
-  padding: 266px 0 80px 0;
-  background-image: url('../images/promo__bg.svg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
-.promo__logo {
-  display: block;
-  margin: 0 auto 110px;
-}
-.promo__follow-up {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  text-align: center;
-  margin: 0 0 8px 0;
-}
-.promo__button {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: #7100ff;
-  border: none;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  transition: all 0.2s linear;
-  animation: pulse 1s ease-in-out alternate infinite;
-}
-.promo__button::before {
-  content: '';
-  width: 12px;
-  height: 20px;
-  top: 12px;
-  left: 16px;
-  position: absolute;
-  background-image: url('../images/arrow_down.svg');
-}
-.promo__button:hover {
-  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
-  animation: pulse-btn 1.5s infinite linear;
-}
-@keyframes pulse-btn {
+/* @keyframes pulse-btn {
   0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
   }
-}
-.about {
-  padding: 0 0 80px 0;
+} */
+
+/* 
+.popup {
+  top: 68px;
+  left: 0;
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 880px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 }
-.about__title {
-  margin: 0 40px 0 0;
+
+.popup__active {
 }
-.title {
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 52px;
+.popup_type_navigation {
 }
-.about__wrapper {
-  max-width: 420px;
+.popup__container {
 }
-.about__text {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  margin: 18px 0 0 0;
+.popup__subtitle {
 }
-.about__text:first-child {
-  margin: 8px 0 0 0;
+.popup__button {
 }
-.about__button {
-  margin: 31px 0 0 0;
+.popup__arrow {
 }
-.events {
-  background-color: #EBE9ED;
-  padding: 80px 0 92px 0;
-  box-sizing: border-box;
+.popup__menu {
 }
-.container {
+.popup__list {
 }
-.title {
+.popup__item {
 }
-.events__title {
+.popup__link {
+}
+.popup__footer {
+}
+.popup__title {
+}
+.popup__img {
+}
+.popup__descr {
 }
 .button {
 }
-.events__button {
-}
+.button_primary {
+} */

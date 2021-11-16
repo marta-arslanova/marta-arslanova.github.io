@@ -1,0 +1,30 @@
+.header__location {
+  display: flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.15s linear;
+}
+
+.header__location:hover {
+  transform: scale(1.05);
+}
+
+.header__location::before {
+  content: '';
+  background-image: url('../../../img/header/location.svg');
+  background-size: cover;
+  position: absolute;
+  left: -32px;
+  width: 22px;
+  height: 24px;
+}
+
+@media screen and (max-width: 1200px){
+  .header__location {
+    display: none;
+  }
+}

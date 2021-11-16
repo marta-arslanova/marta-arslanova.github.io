@@ -1,0 +1,9 @@
+.about__wrapper {
+  max-width: 420px;
+}
+
+@media screen and (max-width: 700px){
+  .about__wrapper {
+    margin: 4px 0 0 0;
+  }
+}

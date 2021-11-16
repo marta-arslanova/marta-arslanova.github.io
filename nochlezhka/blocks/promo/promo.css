@@ -1,0 +1,18 @@
+.promo {
+  padding: 266px 0 80px 0;
+  background-image: url('../.././img/promo/promo__bg.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px){
+  .promo{
+    background-position: top;
+    background-size: cover;
+    background-image: url('../.././img/promo/background.png');
+    background-position-y: -68px;
+    padding: 175px 0 40px 0;
+  }
+}

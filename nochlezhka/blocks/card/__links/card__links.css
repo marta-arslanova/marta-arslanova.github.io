@@ -1,0 +1,17 @@
+.card__links {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: var(--dark-secondary);
+  transition: all .2s linear;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: right;
+}
+
+.card__links:hover {
+  color: var(--dark-primary);
+}

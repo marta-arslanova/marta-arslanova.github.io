@@ -1,0 +1,57 @@
+.header__event {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.15s linear;
+}
+
+.header__event:hover {
+  transform: scale(1.05);
+}
+
+.header__event::before {
+  content: '';
+  background-image: url('../../../img/header/heart.svg');
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -33px;
+  width: 25px;
+  height: 23px;
+  transition: all 0.2s linear;
+}
+
+.header__event:hover::before {
+  animation: pulse-btn 1.5s infinite linear;
+  background-image: url('../../../img/header/heart__red.svg');
+}
+
+@keyframes pulse-btn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .header__event {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 36px 0 auto;
+  }
+  .header__event::before {
+    width: 22px;
+    height: 20px;
+    left: -25px;
+  }
+}

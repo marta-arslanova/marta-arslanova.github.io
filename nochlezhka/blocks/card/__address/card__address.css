@@ -1,0 +1,11 @@
+.card__address {
+  max-width: 204px;
+  margin: 0 8px 0 0;
+  color: var(--dark-secondary);
+  font-size: 16px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: right;
+}

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url(./Nochlejka/woff2/TT_Firs_Neue_Regular.woff2) format('woff2'),
+         url(./Nochlejka/woff/TT_Firs_Neue_Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url(./Nochlejka/woff2/TT_Firs_Neue_Medium.woff2) format('woff2'),
+         url(./Nochlejka/woff/TT_Firs_Neue_Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,31 @@
+.events__button{
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  margin: 16px 8px 0 0;
+  padding: 10px 53px 10px 23px;
+}
+
+.events__button::after {
+  content: '';
+  position: absolute;
+  background-image: url('../../../img/events/arrow.svg');
+  background-position: right;
+  width: 24px;
+  height: 13px;
+  top: 17px;
+  right: 19px;
+}
+
+@media screen and (max-width: 700px){
+  .events__button {
+    margin: 12px 0 0 0;
+    padding: 10px 41px 10px 20px;
+  }
+  .events__button::after {
+    width: 20px;
+    height: 11px;
+    top: 14px;
+    right: 19px;
+  }
+}
