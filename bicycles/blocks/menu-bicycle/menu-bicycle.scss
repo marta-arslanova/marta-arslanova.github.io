@@ -1,0 +1,38 @@
+.menu-bicycle {
+  height: 60px;
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__item {
+    box-sizing: border-box;
+    margin: 0 0 7px 40px;
+  }
+  &__button {
+    text-decoration: none;
+    color: $dark-secondary;
+    opacity: 0.7;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    border: none;
+    background: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    &_active {
+      opacity: 1;
+      font-size: 19px;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}

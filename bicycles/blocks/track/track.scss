@@ -1,0 +1,25 @@
+.track {
+  box-sizing: border-box;
+  display: flex;
+  margin: 122px auto 0;
+  width: 1440px;
+  min-height: 862px;
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image {
+    display: block;
+    width: 639px;
+    height: 400px;
+    object-fit: cover;
+  }
+  &__description {
+    width: 460px;
+    margin: 44px 0 83px 0;
+  }
+  &__item {
+    overflow: hidden;
+  }
+}

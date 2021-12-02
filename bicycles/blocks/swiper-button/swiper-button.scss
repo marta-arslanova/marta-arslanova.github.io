@@ -1,0 +1,23 @@
+.swiper-button {
+  box-sizing: border-box;
+  margin: 0;
+  right: 0;
+  top: 748px;
+  width: 50px;
+  height: 50px;
+  background: $gray-secondary;
+  border-radius: 50px;
+  transition: all 0.2s linear;
+  border: none;
+  &::after {
+    display: none;
+  }
+  &::before {
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    background: $gray-secondary;
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,30 @@
+.bicycle-card {
+  box-sizing: border-box;
+  margin: 0;
+  width: 380px;
+  height: 440px;
+  border-radius: 20px;
+  &__wrapper {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 380px;
+    height: 380px;
+    background-color: $gray-primary;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__image {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__descr {
+    box-sizing: border-box;
+    margin: 19px 0 0 5px;
+    font-size: 18px;
+    line-height: 22px;
+    color: $dark-primary;
+  }
+}

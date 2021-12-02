@@ -1,0 +1,31 @@
+.menu {
+  display: block;
+  height: 74px;
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    height: 100%;
+  }
+  &__item {
+    margin: 0 0 0 34px;
+    height: 100%;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $dark-primary;
+    height: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    transition: all 0.2s linear;
+  }
+  &__link:hover {
+    opacity: 0.75;
+  }
+}

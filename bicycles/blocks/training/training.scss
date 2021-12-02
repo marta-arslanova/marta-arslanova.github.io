@@ -1,0 +1,39 @@
+.training {
+  box-sizing: border-box;
+  margin: 132px auto 120px auto;
+  width: 1440px;
+  min-height: 460px;
+  background-image: url(../images/training_bg.jpg);
+  background-position: bottom 0 right 120px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  &__description {
+    margin: 46px 0 0 0;
+    width: 460px;
+  }
+  &__wrapper {
+    margin: 182px 0 0 0;
+  }
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  &__item {
+    margin: 0 30px 0 0;
+  }
+  &__link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $dark-primary;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}

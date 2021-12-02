@@ -1,0 +1,10 @@
+.swiper-button-prev {
+  left: 120px;
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

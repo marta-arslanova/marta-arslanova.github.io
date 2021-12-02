@@ -1,0 +1,40 @@
+.quote {
+  margin: 120px 0 0 0;
+  &__figure {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__image {
+    object-fit: cover;
+    width: 650px;
+    height: 460px;
+  }
+  &__figcaption {
+    margin: 0 0 0 80px;
+  }
+  &__caption {
+    margin: 0;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -0.5px;
+    color: $dark-primary;
+  }
+  &__name-author {
+    margin: 258px 0 0 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: $dark-primary;
+  }
+  &__occupation-author {
+    box-sizing: border-box;
+    margin: 6px 0 0 0;
+    font-size: 16px;
+    line-height: 28px;
+    color: $dark-secondary;
+    opacity: 0.7;
+  }
+}

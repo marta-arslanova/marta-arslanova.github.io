@@ -1,0 +1,10 @@
+.swiper-button-next {
+  left: 190px;
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
