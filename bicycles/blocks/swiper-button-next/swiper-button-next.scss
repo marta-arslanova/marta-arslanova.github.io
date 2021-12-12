@@ -1,10 +1,15 @@
 .swiper-button-next {
   left: 190px;
   &::before {
-    position: absolute;
     content: '';
     background-image: url(../images/arrow-right.svg);
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .swiper-button-next {
+    left: auto;
+    right: 18px;
   }
 }

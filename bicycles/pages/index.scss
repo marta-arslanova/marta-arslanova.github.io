@@ -1,9 +1,8 @@
-@import url('../blocks/vendor/normalize.css');
-@import url('../blocks/vendor/fonts/fonts.css');
+@import '../blocks/vendor/normalize';
+@import '../blocks/vendor/fonts/fonts';
 @import '../blocks/variables';
 @import '../blocks/mixins';
 @import '../blocks/page/page';
-@import '../blocks/container/container';
 @import '../blocks/header/header';
 @import '../blocks/button/button';
 @import '../blocks/title/title';
@@ -15,7 +14,6 @@
 @import '../blocks/swiper/swiper';
 @import '../blocks/swiper-wrapper/swiper-wrapper';
 @import '../blocks/swiper-slide/swiper-slide';
-@import '../blocks/label/label';
 @import '../blocks/swiper-button-prev/swiper-button-prev';
 @import '../blocks/swiper-button-next/swiper-button-next';
 @import '../blocks/swiper-button/swiper-button';

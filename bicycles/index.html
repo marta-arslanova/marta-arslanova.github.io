@@ -3,33 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <title>Велосипеды</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-    <link rel="stylesheet" href="pages/index.min.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="pages/index.min.css" />
   </head>
   <body class="page">
-    <header class="header">
-      <div class="container">
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">Покрытия и градиенты</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Велосипеды</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Тренировки</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+     <header class="header">
+      <nav class="menu">
+        <button class="menu__burger"></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#Coatings_and_gradients">Покрытия и градиенты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#Bicycle">Велосипеды</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#Training">Тренировки</a>
+          </li>
+        </ul>
+      </nav>
     </header>
- <main class="main">
-     <section class="promo">
-        <div class="promo__wrapper">
+    <main class="main">
+      <section class="promo">
+        <img class="promo__bg" src="images/promo_bg.jpg" alt="тропа" />
+        <div class="promo__title-wrapper">
           <h1 class="title promo__title">Шоссе, ТТ и Грэвел</h1>
+        </div>
+        <div class="promo__wrapper">
           <p class="description promo__description">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
           <a class="button promo__button" href="#">Подробнее</a>
           <p class="promo__descr-element">Cannondale Systemsix</p>
@@ -40,125 +42,173 @@
           </div>
         </div>
       </section>
+
       <section class="quote" aria-label="Заголовок">
-        <div class="container">
-          <figure class="quote__figure">
-            <img class="quote__image" src="images/Norway.jpg" alt="Норвегия" />
-            <figcaption class="quote__figcaption">
-              <blockquote class="quote__caption">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</blockquote>
-              <p class="quote__name-author">Эдди Меркс</p>
-              <p class="quote__occupation-author">Велогонщик</p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure class="quote__figure">
+          <img class="quote__image" src="images/Norway.jpg" alt="Норвегия" />
+          <figcaption class="quote__figcaption">
+            <blockquote class="quote__caption">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</blockquote>
+            <p class="quote__name-author">Эдди Меркс</p>
+            <p class="quote__occupation-author">Велогонщик</p>
+          </figcaption>
+        </figure>
       </section>
-      <section class="track">
+
+      <section class="track" id="coatings_and_gradients">
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="track__item swiper-slide">
               <h2 class="title track__title">Шоссе</h2>
               <p class="description track__description">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
               <div class="track__wrapper">
-                <div class="label">
-                  <img class="label__icon" src="images/highway_icon.svg" alt="иконка лэйбла" />
+                <div class="track__label">
+                  <img class="track__label-icon" src="images/highway_icon.svg" alt="иконка лэйбла" />
                 </div>
                 <img class="track__image" src="images/highway.jpg" alt="Фото трассы" />
-                <img class="track__image" src="images/forest_trail.jpg" alt="Фото трассы" />
+                <img class="track__image track__image-second" src="images/forest_trail.jpg" alt="Фото трассы" />
               </div>
             </div>
+
             <div class="track__item swiper-slide">
               <h2 class="title track__title">Грэвел</h2>
               <p class="description track__description">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
               <div class="track__wrapper">
-                <div class="label">
-                  <img class="label__icon" src="images/gravel.svg" alt="иконка лэйбла" />
+                <div class="track__label">
+                  <img class="track__label-icon" src="images/gravel.svg" alt="иконка лэйбла" />
                 </div>
                 <img class="track__image" src="images/forest_trail.jpg" alt="Фото трассы" />
-                <img class="track__image" src="images/gravel-track.jpg" alt="Фото трассы" />
+                <img class="track__image track__image-second" src="images/gravel-track.jpg" alt="Фото трассы" />
               </div>
             </div>
+
             <div class="track__item swiper-slide">
               <h2 class="title track__title">ТТ</h2>
               <p class="description track__description">ТТ — это велосипед для триатлона или раздельного старта, гооняют на таком велике только по равнинному асфальту, велик очень быстрые и аэродинамичный.</p>
               <div class="track__wrapper">
-                <div class="label">
-                  <img class="label__icon" src="images/tt.svg" alt="иконка лэйбла" />
+                <div class="track__label">
+                  <img class="track__label-icon" src="images/tt.svg" alt="иконка лэйбла" />
+
                 </div>
                 <img class="track__image" src="images/gravel-track.jpg" alt="Фото трассы" />
-                <img class="track__image" src="images/highway.jpg" alt="Фото трассы" />
+                <img class="track__image track__image-second" src="images/highway.jpg" alt="Фото трассы" />
               </div>
             </div>
           </div>
-          <button class="swiper-button swiper-button-prev" type="button"></button>
-          <button class="swiper-button swiper-button-next" type="button"></button>
         </div>
-      </section>
-      <section class="bicycles">
-        <div class="container">
-          <div class="bicycles__header">
-            <h2 class="title bicycles__title">Велосипеды</h2>
-            <nav class="bicycles__menu menu-bicycle">
-              <ul class="menu-bicycle__list">
-                <li class="menu-bicycle__item">
-                  <button class="menu-bicycle__button menu-bicycle__button_active" id='highway' href="#" type="button">Шоссе</button>
-                </li>
-                <li class="menu-bicycle__item">
-                  <button class="menu-bicycle__button" id='gravel' href="#" type="button">Грэвел</button>
-                </li>
-                <li class="menu-bicycle__item">
-                  <button class="menu-bicycle__button" id='tt' href="#" type="button">TT</button>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="bicycles__wrapper">
-          </div>
-        </div>
-      </section>
-      <section class="training">
-        <div class="container">
-          <h2 class="title training__title">Тренировки</h2>
-          <p class="description training__description">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
-          <div class="training__wrapper">
-            <ul class="training__list">
-              <li class="training__item">
-                <a class="training__link" href="#">Strava</a>
+        <button class="swiper-button swiper-button-prev" type="button"></button>
+        <button class="swiper-button swiper-button-next" type="button"></button>
+      </section> 
+
+      <section class="bicycles" id="bicycle">
+        <div class="bicycles__header">
+          <h2 class="title bicycles__title">Велосипеды</h2>
+
+          <nav class="bicycles__menu menu-bicycle">
+            <ul class="menu-bicycle__list">
+              <li class="menu-bicycle__item">
+                <button class="menu-bicycle__button menu-bicycle__button_active" id="highway" type="button">Шоссе</button>
               </li>
-              <li class="training__item">
-                <a class="training__link" href="#">Komoot</a>
+              <li class="menu-bicycle__item">
+                <button class="menu-bicycle__button" id="gravel" type="button">Грэвел</button>
+              </li>
+              <li class="menu-bicycle__item">
+                <button class="menu-bicycle__button" id="tt" type="button">TT</button>
               </li>
             </ul>
+          </nav>
+
+          <select class="menu-bicycle__select" name="select-bicycle-types" id="select-bicycle-types">
+            <ul class="menu-bicycle__select-list">
+              <li class="menu-bicycle__select-item">
+                <option class="menu-bicycle__option" value="Шоссе">Шоссе</option>
+              </li>
+              <li class="menu-bicycle__select-item">
+                <option class="menu-bicycle__option" value="Шоссе">Грэвел</option>
+              </li>
+              <li class="menu-bicycle__select-item">
+                <option class="menu-bicycle__option" value="Шоссе">ТТ</option>
+              </li>
+            </ul>
+          </select>
+        </div>
+        <div class="bicycles__swipper">
+          <div class="bicycles__wrapper">
+            <a class="bicycle-card bicycle-card__first" target="_blank" href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN">
+              <div class="bicycle-card__wrapper">
+                <img class="bicycle-card__image" src="images/CerveloCaledonia-5.png" alt="Модель велосипеда" />
+              </div>
+              <p class="bicycle-card__description">Cervelo Caledonia-5</p>
+            </a>
+
+            <a class="bicycle-card bicycle-card__second" target="_blank" href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J">
+              <div class="bicycle-card__wrapper">
+                <img class="bicycle-card__image" src="images/CannondaleSystemsixHimod.png" alt="Модель велосипеда" />
+              </div>
+              <p class="bicycle-card__description">Cannondale Systemsix Himod</p>
+            </a>
+
+            <a class="bicycle-card bicycle-card__third" target="_blank" href=" https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF">
+              <div class="bicycle-card__wrapper">
+                <img class="bicycle-card__image" src="images/TrekDomaneSL-7.png" alt="Модель велосипеда" />
+              </div>
+              <p class="bicycle-card__description">Trek Domane SL-7</p>
+            </a>
+          </div>
+          <div class="bicycle-card__buttons">
+            <button class="bicycle-card__button bicycle-card__button_active"></button>
+            <button class="bicycle-card__button"></button>
+            <button class="bicycle-card__button"></button>
           </div>
         </div>
       </section>
+
+      <section class="training" id="training">
+        <h2 class="title training__title">Тренировки</h2>
+        <p class="description training__description">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
+        <ul class="training__list">
+          <li class="training__item">
+            <a class="training__link" href="https://www.strava.com" target="_blank">Strava</a>
+          </li>
+          <li class="training__item">
+            <a class="training__link" href="https://www.komoot.com" target="_blank">Komoot</a>
+          </li>
+        </ul>
+        <img class="training__image" src="images/training_bg.jpg" alt="Велотропа в лесу" />
+      </section>
     </main>
+
     <footer class="footer">
-        <div class="container">
-          <form class="mailing">
+      <div class="footer__container">
+        <form class="mailing">
+          <fieldset class="mailing__contact-info">
             <h2 class="mailing__title">Подпишитесь на рассылку —</h2>
             <div class="mailing__wrapper">
-              <input class="mailing__input" type="email" placeholder="">
-              <button class="mailing__button" type="submit">ok</button>  <!-- mailing__button_visible -->
+              <input class="mailing__input" type="email" placeholder="Ваш e-mail  " name="email" />
+              <button class="mailing__button mailing__button_visible" type="submit">ok</button>
             </div>
-          </form>
-          <div class="footer__wrapper">
-            <p class="footer__copyright">&copy; 2021. Арсланова Марта</p>
-            <div class="switcher">
-              <img class="switcher__icon switcher__icon-light" src="images/sun.svg" alt="Солнце">
-              <input class="checkbox switcher__checkbox" type="checkbox">
-              <img class="switcher__icon switcher__icon-dark" src="images/moon.svg" alt="Луна">
-            </div>
+          </fieldset>
+        </form>
+        <div class="footer__wrapper">
+          <p class="footer__copyright">&copy; 2021. Арсланова Марта</p>
+          <div class="footer__switcher switcher">
+            <img class="switcher__icon switcher__icon-light" src="images/sun.svg" alt="Солнце" />
+            <input class="checkbox switcher__checkbox" type="checkbox" />
+            <img class="switcher__icon switcher__icon-dark" src="images/moon.svg" alt="Луна" />
           </div>
         </div>
-    </footer>
-    <template id='figure'>
+      </div>
+    </footer> 
+<!-- 
+    <template id="figure">
       <figure class="bicycle-card">
         <div class="bicycle-card__wrapper">
-          <img class="bicycle-card__image">
+          <img class="bicycle-card__image" />
         </div>
-        <figcaption class="bicycle-card__descr"></figcaption>
+        <figcaption class="bicycle-card__descr">
+          <a class="bicycle-card__link" href="" target="_blank"></a>
+        </figcaption>
       </figure>
-    </template>
+    </template> -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="scripts/index.js"></script>
   </body>

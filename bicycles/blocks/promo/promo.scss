@@ -1,31 +1,48 @@
 .promo {
+  position: relative;
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 94px 0 0 120px;
-  width: 1440px;
-  min-height: 930px;
-  background-image: url(../images/promo_bg.jpg);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-origin: content-box;
+  max-width: 1440px;
+  min-width: 320px;
+  &__bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &__title-wrapper {
+    margin: 63px 0 0 0;
+    width: 100%;
+    height: 120px;
+  }
+  &__title {
+    width: 320px;
+  }
   &__wrapper {
     box-sizing: border-box;
     width: 460px;
     margin: 0 50px 0 0;
   }
-  &__title {
-    margin: 63px 0 0 0;
-    width: 320px;
-  }
   &__description {
     margin: 44px 0 0 0;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 460px;
   }
   &__button {
     margin: 53px 0 0 0;
   }
+  &__descr-element {
+    margin: 169px 0 0 0;
+    font-size: 18px;
+    line-height: 18px;
+    color: $dark-primary;
+    font-weight: 400;
+  }
   &__sticky-container {
-    height: 754px;
+    height: 574px;
   }
   &__sticky-element {
     position: sticky;
@@ -36,17 +53,71 @@
     background: $gray-primary;
     box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
   }
-  &__descr-element {
-    margin: 169px 0 0 0;
-    font-size: 18px;
-    line-height: 18px;
-    color: $dark-primary;
-    font-weight: 400;
-  }
   &__sticky-img {
     display: block;
     margin: auto;
     max-width: 100%;
     max-height: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .promo {
+    padding: 51px 18px 0 18px;
+    margin: 0 0 80px 0;
+    &__bg {
+      width: calc(100% - 18px * 2);
+      height: 348px;
+      right: 18px;
+      top: 234px;
+      object-fit: cover;
+    }
+    &__title {
+      order: 1;
+      width: 190px;
+    }
+    &__sticky-container {
+      order: 2;
+      height: 310px;
+      width: 100%;
+    }
+    &__wrapper {
+      order: 3;
+      width: 100%;
+    }
+    &__sticky-element {
+      width: 234px;
+      height: 160px;
+      top: 233px;
+    }
+    &__descr-element {
+      display: none;
+    }
+        &__description {
+      margin: 76px 0 0 0;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .promo {
+    flex-direction: column;
+    &__description {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &__button {
+      margin: 41px 0 0 0;
+      width: 284px;
+      height: 46px;
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .promo {
+    &__bg {
+      width: 254px;
+    }
   }
 }

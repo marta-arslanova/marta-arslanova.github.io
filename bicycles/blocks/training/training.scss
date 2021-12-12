@@ -1,25 +1,28 @@
 .training {
   box-sizing: border-box;
   margin: 132px auto 120px auto;
-  width: 1440px;
-  min-height: 460px;
-  background-image: url(../images/training_bg.jpg);
-  background-position: bottom 0 right 120px;
-  background-repeat: no-repeat;
-  background-origin: content-box;
+  padding: 0 120px;
+  max-width: 1440px;
+  max-height: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0 160px;
   &__description {
+    box-sizing: border-box;
     margin: 46px 0 0 0;
-    width: 460px;
+    max-width: 460px;
   }
-  &__wrapper {
-    margin: 182px 0 0 0;
+  &__image {
+    display: block;
+    max-width: 580px;
   }
   &__list {
+    box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
-    align-self: center;
     padding: 0;
-    margin: 0;
+    margin: 182px 0 0 0;
     list-style-type: none;
   }
   &__item {
@@ -34,6 +37,39 @@
     transition: all 0.2s linear;
     &:hover {
       opacity: 0.75;
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .training {
+    padding: 0 18px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .training {
+    margin: 40px 0 60px 0;
+    border-top: 1px solid #e3e3e3;
+    flex-wrap: nowrap;
+    max-height: 820px;
+    &__title {
+      order: 1;
+      margin: 40px 0 0 0;
+    }
+    &__image {
+      order: 2;
+      margin: 40px 0 0 0;
+    }
+    &__description {
+      order: 3;
+      margin: 40px 0 0 0;
+    }
+    &__list {
+      order: 4;
+      margin: 40px 0 0 0;
+    }
+    &__link {
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }

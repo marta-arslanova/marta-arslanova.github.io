@@ -1,19 +1,18 @@
 .track {
   box-sizing: border-box;
-  display: flex;
-  margin: 122px auto 0;
-  width: 1440px;
-  min-height: 862px;
+  margin: 122px auto 160px;
+  max-width: 1440px;
+  position: relative;
   &__wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
+    gap: 40px;
   }
   &__image {
     display: block;
-    width: 639px;
-    height: 400px;
     object-fit: cover;
+    max-height: 639px;
   }
   &__description {
     width: 460px;
@@ -21,5 +20,64 @@
   }
   &__item {
     overflow: hidden;
+  }
+  &__label {
+    box-sizing: border-box;
+    padding: 12px 0 12px 16px;
+    position: absolute;
+    background-image: url(../images/rectrangle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 40px;
+    left: -1px;
+    bottom: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .track {
+    margin: 0 0 74px 0;
+    padding: 40px 0 0 0;
+    border-top: 1px solid #e3e3e3;
+    &__image-second {
+      display: none;
+    }
+    &__image {
+      width: 100%;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      order: 1;
+    }
+    &__wrapper {
+      order: 2;
+      margin: 40px 0 0 0;
+    }
+    &__description {
+      order: 3;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .track {
+    &__description {
+      margin: 40px 0 0 0;
+    }
+    &__label {
+      padding: 6px 0 0 11px;
+      width: 70px;
+      height: 28px;
+      left: 0;
+    }
+    &__label-icon {
+      width: 35px;
+      height: 12px;
+      object-fit: contain;
+    }
   }
 }

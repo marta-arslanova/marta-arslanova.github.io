@@ -1,9 +1,39 @@
 .menu-bicycle {
   height: 60px;
+  &__select {
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+    display: none;
+    width: 114px;
+    height: 30px;
+    padding: 6px 12px;
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    background: transparent;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+    color: $dark-primary;
+    cursor: pointer;
+  }
+  &__option {
+    box-sizing: border-box;
+    padding: 6px 12px;
+    width: 114px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+    background-color: $gray-primary;
+    &:hover {
+      background-color: #24b47e;
+      cursor: pointer;
+    }
+  }
   &__list {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: stretch;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -11,7 +41,7 @@
   }
   &__item {
     box-sizing: border-box;
-    margin: 0 0 7px 40px;
+    margin: 0 0 0 40px;
   }
   &__button {
     text-decoration: none;
@@ -20,13 +50,14 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
+    margin: 26px 0 0 0;
     border: none;
     background: transparent;
     transition: all 0.3s linear;
     cursor: pointer;
+    padding: 0;
     &_active {
       opacity: 1;
-      font-size: 19px;
       &:hover {
         opacity: 0.6;
       }
@@ -36,3 +67,13 @@
     }
   }
 }
+
+ @media screen and (max-width: 768px) {
+  .menu-bicycle {
+    display: none;
+    &__select {
+      display: block;
+    }
+
+  }
+} 

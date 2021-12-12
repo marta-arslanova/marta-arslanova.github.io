@@ -1,10 +1,21 @@
 .swiper-button-prev {
   left: 120px;
   &::before {
-    position: absolute;
     content: '';
     background-image: url(../images/arrow-left.svg);
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .swiper-button-prev {
+    right: 90px;
+    left: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .swiper-button-prev {
+    right: 52px;
+    left: auto;
   }
 }

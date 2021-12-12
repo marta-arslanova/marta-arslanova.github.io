@@ -1,5 +1,8 @@
 .quote {
-  margin: 120px 0 0 0;
+  box-sizing: border-box;
+  margin: 120px auto 0;
+  padding: 0 120px;
+  max-width: 1440px;
   &__figure {
     margin: 0;
     display: flex;
@@ -8,8 +11,8 @@
   }
   &__image {
     object-fit: cover;
-    width: 650px;
-    height: 460px;
+    max-width: 650px;
+    object-fit: cover;
   }
   &__figcaption {
     margin: 0 0 0 80px;
@@ -36,5 +39,39 @@
     line-height: 28px;
     color: $dark-secondary;
     opacity: 0.7;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .quote {
+    padding: 20px 18px 0;
+    margin: 0 0 84px 0;
+    border-top: 1px solid #e3e3e3;
+    &__figure {
+      flex-direction: column;
+    }
+    &__image {
+      width: 100%;
+
+    }
+    &__caption {
+      margin: 40px 0 0 0;
+      font-weight: 600;
+      font-size: 23px;
+      line-height: 29px;
+    }
+    &__figcaption {
+      margin: 0;
+    }
+    &__name-author {
+      margin: 40px 0 0 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+    }
+    &__occupation-author {
+      margin: 0;
+      font-size: 10px;
+      line-height: 16px;
+    }
   }
 }
