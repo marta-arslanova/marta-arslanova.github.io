@@ -1,53 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>pajes</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="/images/web-icon.png" type="image/x-icon">
-</head>
-<body class="page">
-  <div class="container">
+  <head>
+    <title>Portfolio Arslanova</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="images/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pages/style.min.css" />
+  </head>
+  <body class="page">
     <header class="header">
-      <div class="header__wrapper">
-        <h1 class="header__title">Примеры работ</h1>
-      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#about" class="menu__link">About</a>
+          </li>
+          <li class="menu__item">
+            <a href="#portfolio" class="menu__link">Porfolio</a>
+          </li>
+          <li class="menu__item">
+            <a href="#contacts" class="menu__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <div class="product">
-      <div class="product__page">
-        <a href="/russian-travel/index.html" class="product__link" target="blank">russian-travel</a>
-      </div>
-      <div class="product__page">
-        <a href="/animation/index.html" class="product__link" target="blank">animation</a>
-      </div>
-      <div class="product__page">
-        <a href="/transformation/index.html" class="product__link" target="blank">transformation</a>
-      </div>
-      <div class="product__page">
-        <a href="/monevac_contacts/index.html" class="product__link" target="blank">monevac_contacts</a>
-      </div>
-      <div class="product__page">
-        <a href="/teaching_methods/index.html" class="product__link" target="blank">teaching_methods</a>
-      </div>
-      <div class="product__page">
-        <a href="/input/index.html" class="product__link" target="blank">input</a>
-      </div>
-      <div class="product__page">
-        <a href="/mesto/index.html" class="product__link" target="blank">Mesto</a>
-      </div>
-      <div class="product__page">
-        <a href="/nochlezhka/index.html" class="product__link" target="blank">Nochlezhka</a>
-      </div>
-            <div class="product__page">
-        <a href="/bicycles/index.html" class="product__link" target="blank">Bicycles</a>
-      </div>
-    </div>
-  </div>
-</body>
+    <main class="main">
+      <section class="about" id="about">
+        <div class="title-img about__title-img"></div>
+        <h1 class="title about__title">Marta Arslanova</h1>
+        <p class="about__description">
+          <span class="about__description-str">
+            My name is Marta Arslanova and I'm junior frontend developer.</span
+          >
+          <span class="about__description-str">
+            I've been working in IT for 5 years, and last year I'm learning
+            frontend development in detail.</span
+          >
+          <span class="about__description-str">
+            You can check below to see my projects and contacts.</span
+          >
+          <span class="about__description-str">
+            If you have any questions - ask me and I'll answer.</span
+          >
+        </p>
+        <ul class="about__list">
+          <li class="about__item">
+            <a
+              href="https://t.me/MartaArslanova"
+              class="about__link"
+              target="_blank"
+            >
+              <img
+                src="images/icons/tg.svg"
+                alt="telegram"
+                class="about__images"
+              />
+            </a>
+          </li>
+          <li class="about__item">
+            <a
+              href="https://github.com/marta-arslanova"
+              class="about__link"
+              target="_blank"
+            >
+              <img src="images/icons/git.svg" alt="git" class="about__images" />
+            </a>
+          </li>
+          <li class="about__item">
+            <a
+              href="https://wa.me/79920052969"
+              class="about__link"
+              target="_blank"
+            >
+              <img
+                src="images/icons/wats.svg"
+                alt="wats"
+                class="about__images"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="title-img portfolio__title-img"></div>
+        <h1 class="title portfolio__title">portfolio</h1>
+        <h2 class="portfolio__subtitle">A few of my projects.</h2>
+        <p class="portfolio__text">Go to github or look on preview ...</p>
+        <ul class="portfolio__area-scroll area-scroll">
+          <li class="area-scroll__card card mesto">
+            <ul class="card__list">
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  target="_blank"
+                  href="https://marta-arslanova.github.io/mesto/index.html"
+                >
+                  <img
+                    class="card__img"
+                    src="images/icons/web-dark.svg"
+                    alt="web"
+                  />
+                </a>
+              </li>
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  target="_blank"
+                  href="https://github.com/marta-arslanova/mesto-project"
+                >
+                  <img
+                    class="card__img"
+                    src="images/icons/git-dark.svg"
+                    alt="git"
+                  />
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="area-scroll__card card nochlezhka">
+            <ul class="card__list">
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  target="_blank"
+                  href="https://marta-arslanova.github.io/nochlezhka/index.html"
+                >
+                  <img
+                    class="card__img"
+                    src="images/icons/web-dark.svg"
+                    alt="web"
+                  />
+                </a>
+              </li>
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  target="_blank"
+                  href="https://github.com/marta-arslanova/nochlezhka"
+                >
+                  <img
+                    class="card__img"
+                    src="images/icons/git-dark.svg"
+                    alt="git"
+                  />
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="area-scroll__card card bicycles">
+            <ul class="card__list">
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  target="_blank"
+                  href="https://marta-arslanova.github.io/bicycles/index.html"
+                >
+                  <img
+                    class="card__img"
+                    src="images/icons/web-dark.svg"
+                    alt="web"
+                  />
+                </a>
+              </li>
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  target="_blank"
+                  href="https://github.com/marta-arslanova/bicycles"
+                >
+                  <img
+                    class="card__img"
+                    src="images/icons/git-dark.svg"
+                    alt="git"
+                  />
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="area-scroll__card card monevac">
+            <ul class="card__list">
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  target="_blank"
+                  href="https://marta-arslanova.github.io/monevac_contacts/index.html"
+                >
+                  <img
+                    class="card__img"
+                    src="images/icons/web-dark.svg"
+                    alt="web"
+                  />
+                </a>
+              </li>
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  target="_blank"
+                  href="https://github.com/marta-arslanova/monevac_contacts"
+                >
+                  <img
+                    class="card__img"
+                    src="images/icons/git-dark.svg"
+                    alt="git"
+                  />
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="area-scroll__card card travels">
+            <ul class="card__list">
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  target="_blank"
+                  href="https://marta-arslanova.github.io/russian-travel/index.html"
+                >
+                  <img
+                    class="card__img"
+                    src="images/icons/web-dark.svg"
+                    alt="web"
+                  />
+                </a>
+              </li>
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  target="_blank"
+                  href="https://github.com/marta-arslanova/russian-travel"
+                >
+                  <img
+                    class="card__img"
+                    src="images/icons/git-dark.svg"
+                    alt="git"
+                  />
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="area-scroll__card card how-to-learn">
+            <ul class="card__list">
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  target="_blank"
+                  href="https://marta-arslanova.github.io/teaching_methods/index.html"
+                >
+                  <img
+                    class="card__img"
+                    src="images/icons/web-dark.svg"
+                    alt="web"
+                  />
+                </a>
+              </li>
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  target="_blank"
+                  href="https://github.com/marta-arslanova/teaching-methods"
+                >
+                  <img
+                    class="card__img"
+                    src="images/icons/git-dark.svg"
+                    alt="git"
+                  />
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="title-img contacts__title-img"></div>
+        <h1 class="title contacts__title">contacts</h1>
+        <div class="contacts__wrapper">
+          <div class="contact">
+            <h2 class="contact__subtitle contact-subtitle">
+              You can reach me in any way:
+            </h2>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a
+                  class="contact__link contact__telegram"
+                  target="_blank"
+                  href="https://t.me/MartaArslanova"
+                >
+                  <span class="contact__social-name">telegram</span>
+                  MartaArslanova</a
+                >
+              </li>
+              <li class="contact__item">
+                <a
+                  class="contact__link contact__whatsapp"
+                  target="_blank"
+                  href="https://wa.me/79920052969"
+                  ><span class="contact__social-name">whatsApp</span
+                  >+79920052969</a
+                >
+              </li>
+              <li class="contact__item">
+                <a
+                  class="contact__link contact__github"
+                  target="_blank"
+                  href="https://github.com/marta-arslanova"
+                  ><span class="contact__social-name">github</span
+                  >marta-arslanova</a
+                >
+              </li>
+            </ul>
+          </div>
+          <form
+            class="form"
+            action="#"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <h2 class="form__subtitle contact-subtitle">
+              Or fill out the form:
+            </h2>
+            <input
+              class="form__input"
+              placeholder="name"
+              type="text"
+              name="username"
+              value=""
+            />
+            <input
+              class="form__input"
+              placeholder="email"
+              type="email"
+              name="email"
+              value=""
+            />
+            <textarea
+              class="form__textarea form__input"
+              name="message"
+              placeholder="Your message ..."
+            ></textarea>
+            <button class="form__button button" type="submit" name="submit">
+              submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">© 2022. Arslanova Marta</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
